@@ -1,0 +1,107 @@
+body {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif; /* Retro pixel font */
+    font-size: 12px;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d); /* Dark gradient background */
+    color: #00ff00; /* Neon green text */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    background: #111; /* Dark background */
+    border: 3px solid #d0ff00; /* Neon green border */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d0ff00; /* Neon glow */
+    width: 60rem;
+}
+
+h1 {
+    border-bottom: 4px double #ff006a; /* Neon green border */
+    font-size: 40px;
+    margin: 10px;
+    color: #ff006a; /* Neon pink */
+    text-shadow: 0 0 10px #ff006a; /* Neon glow */
+}
+
+h2 {
+    margin: 0px;
+    color: #d0ff00; /* Neon cyan */
+    text-shadow: 0 0 10px #d0ff00; /* Neon glow */
+}
+
+h3 {
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    color: #ff9900; /* Neon orange */
+    text-shadow: 0 0 10px #ff9900; /* Neon glow */
+}
+
+ul {
+    font-size: 20px;
+    text-align: left;
+    list-style: square;
+    margin: 0px;
+    color: #ff006a; /* Neon green */
+}
+
+a {
+    color: #ff009d; /* Neon cyan */
+    text-decoration: none;
+    text-shadow: 0 0 10px #ff006a; /* Neon glow */
+}
+
+a:hover, a:hover p {
+    color: white;
+    background-color: #ff006a; /* Neon green background */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#tyringe {
+    color: #ff0000; /* Neon red */
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 0 0 10px #ff0000; /* Neon glow */
+}
+
+#tyringe:hover {
+    color: black;
+    background-color: #ff0000; /* Neon red background */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#about-raspberry{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#about-raspberry p {
+    margin: 20px;
+    color: #ff009d;
+}
+
+#img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    #content {
+        width: 90%;
+        height: auto;
+    }
+}

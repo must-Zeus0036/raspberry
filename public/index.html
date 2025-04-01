@@ -1,261 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html>
+<link rel="stylesheet" href="styles/style1.css">
+<link rel="icon" href="favicon.ico">
+<script>
+    const stylesheets = [
+        "styles/style7.css", // Sunday
+        "styles/style1.css", // Monday
+        "styles/style2.css", // Tuesday
+        "styles/style3.css", // Wednesday
+        "styles/style4.css", // Thursday
+        "styles/style5.css", // Friday
+        "styles/style6.css"  // Saturday
+    ];
+    const today = new Date().getDay();
+    document.write(`<link rel="stylesheet" href="${stylesheets[today]}">`);
+</script>
 
-    <title>Don't skip BookShop</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<title>Raspberry Server</title>
 <body>
-    <section class="container">
-        <header>
-            <img id="logo" src="logo.jpg" alt="Logo">
-            <h1>Don't Skip BookShop</h1>
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <aside class="sidebar">
-            <h2>Categories</h2>
-            <nav aria-label="Book Categories">
-                <ul class="Categories">
-                
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Drama</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Children</a></li>
-                </ul>
-            </nav>
-            
-        </aside>
-        <main>
-            <section class="book-card">
-                <h2>All Books</h2>
-                <section class="books">
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover Book 1' by Mustafa A">
-                        <h3>Book 1</h3>
-                        <p style="font-size: 8;">A poignant and emotional story of love, loss, and healing.</p>
-                        <p>Mustafa A</p>
-                        <p><span class="heighlight">Price 9$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 2' by Mustafa B">
-                        <h3>Book 2</h3>
-                        <p style="font-size: 8;">A classic children's tale of a mouse's adventure in the forest.</p>
-                        <p>Mustafa B</p>
-                        <p><span class="heighlight">Price 15$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 3' by Mustafa C">
-                        <h3>Book 3</h3>
-                        <p style="font-size: 8;">A heartwarming romance novel about finding love in unexpected places.</p>
-                        <p>Mustafa C</p>
-                        <p><span class="heighlight">Price 4$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 4' by Mustafa D">
-                        <h3>Book 4</h3>
-                        <p style="font-size: 8;">The autobiography of basketball legend Michael Jordan, telling his journey to greatness.</p>
-                        <p>Mustafa D</p>
-                        <p><span class="heighlight">Price 6$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 5' by Mustafa E">
-                        <h3>Book 5</h3>
-                        <p style="font-size: 8;">A deep sectione into the political and economic factors that lead to the success or failure of nations.</p>
-                        <p>Mustafa E</p>
-                        <p><span class="heighlight">Price 21$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 6' by Mustafa F">
-                        <h3>Book 6</h3>
-                        <p style="font-size: 8;">An in-depth history of Sweden from the Viking Age to the medieval period, amazing to read this book.</p>
-                        <p>Mustafa F</p>
-                        <p><span class="heighlight">Price 30$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 7' by Mustafa B">
-                        <h3>Book 7</h3>
-                        <p style="font-size: 8;">A comprehensive visual guide to the key moments in world history.</p>
-                        <p>Mustafa B</p>
-                        <p><span class="heighlight">Price 68$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Musfafa B">
-                        <h3>Book 8</h3>
-                        <p style="font-size: 8;">A beginner-friendly guide to understanding AI and its impact on modern society.</p>
-                        <p>Mustafa B</p>
-                        <p><span class="heighlight">Price 57$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-    
-                    <section class="book">
-                        <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 9' by Mustafa A">
-                        <h3>Book 9</h3>
-                        <p style="font-size: 8;">A collection of short stories designed to help beginner English learners.</p>
-                        <p>Mustafa A</p>
-                        <p><span class="heighlight">Price 14$</span></p>
-                        <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                    </section>
-                </section>
-            </section>
-            <section class="filter-section">
-                <h2>Filter Books</h2>
-                <section class="filter-category">
-                    <h2>Books by Price</h2>
-                    <section class="books-grid">
-                        <section class="book">
-                            <h3>1$ - 10$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 3' by Mustafa C">
-                            <h3>Book 3</h3>
-                            <p style="font-size: 8;">A heartwarming romance novel about finding love in unexpected places.</p>
-                            <p>Mustafa C</p>
-                            <p><span class="heighlight">Price 4$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        <section class="book">
-                            <h3>1$ - 10$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 4' by Mustafa D">
-                            <h3>Book 4</h3>
-                            <p style="font-size: 8;">The autobiography of basketball legend Michael Jordan, telling his journey to greatness.</p>
-                            <p>Mustafa D</p>
-                            <p><span class="heighlight">Price 6$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        <section class="book">
-                            <h3>1$ - 10$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover Book 1' by Mustafa A">
-                            <h3>Book 1</h3>
-                            <p style="font-size: 8;">A poignant and emotional story of love, loss, and healing.</p>
-                            <p>Mustafa A</p>
-                            <p><span class="heighlight">Price 9$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        
-                        <section class="book">
-                            <h3>11$ - 40$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 9' by Mustafa A">
-                            <h3>Book 9</h3>
-                            <p style="font-size: 8;">A collection of short stories designed to help beginner English learners.</p>
-                            <p>Mustafa A</p>
-                            <p><span class="heighlight">Price 14$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        
-                        
-                        <section class="book">
-                            <h3>11$ - 30$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 2' by Mustafa B">
-                            <h3>Book 2</h3>
-                            <p style="font-size: 8;">A classic children's tale of a mouse's adventure in the forest.</p>
-                            <p>Mustafa B</p>
-                            <p><span class="heighlight">Price 15$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        <section class="book">
-                            <h3>11$ - 30$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 5' by Mustafa E">
-                            <h3>Book 5</h3>
-                            <p style="font-size: 8;">A deep sectione into the political and economic factors that lead to the success or failure of nations.</p>
-                            <p>Mustafa E</p>
-                            <p><span class="heighlight">Price 21$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        <section class="book">
-                            <h3>11$ - 30$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 6' by Mustafa F">
-                            <h3>Book 6</h3>
-                            <p style="font-size: 8;">An in-depth history of Sweden from the Viking Age to the medieval period, amazing to read this book.</p>
-                            <p>Mustafa F</p>
-                            <p><span class="heighlight">Price 30$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        <section class="book">
-                            <h3>31$ - 100$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Musfafa B">
-                            <h3>Book 8</h3>
-                            <p style="font-size: 8;">A beginner-friendly guide to understanding AI and its impact on modern society.</p>
-                            <p>Mustafa B</p>
-                            <p><span class="heighlight">Price 57$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                        <section class="book">
-                            <h3>31$ - 100$</h3>
-                            <img src="output.jpg" width="70%" height="60%" alt="Book cover of 'Book 7' by Mustafa B">
-                            <h3>Book 7</h3>
-                            <p style="font-size: 8;">A comprehensive visual guide to the key moments in world history.</p>
-                            <p>Mustafa B</p>
-                            <p><span class="heighlight">Price 68$</span></p>
-                            <a href="cart.html"><button aria-label="Buy this book">Buy</button></a>
-                        </section>
-                    </section>
-                </section>
-                <section class="filter-category">
-                    <h2>Books by Author</h2>
-                    <section class="books-grid">
-                        <section class="book">
-                            <h3>Mustafa A</h3>
-                            <p>Book 1, Book 9</p>
-                        </section>
-                        <section class="book">
-                            <h3>Mustafa B</h3>
-                            <p>Book 2, Book 7, Book 8</p>
-                        </section>
-                        <section class="book">
-                            <h3>Mustafa C</h3>
-                            <p>Book 3</p>
-                        </section>
-                        <section class="book">
-                            <h3>Mustafa D</h3>
-                            <p>Book 4</p>
-                        </section>
-                        <section class="book">
-                            <h3>Mustafa E</h3>
-                            <p>Book 5</p>
-                        </section>
-                        <section class="book">
-                            <h3>Mustafa F</h3>
-                            <p>Book 6</p>
-                        </section>
-                        
-                    </section>
-                </section>
-            </section>
-        </main>
-    
-        <footer>
-            <address>
-                <!-- <input type="text"placeholder="Enter your name">
-                <input type="password"> -->
-                &copy; Don't Skip BookShop <br>
-                Author: Mustafa Al-Bayati <br>
-                Email: <a href="mailto:mustafa.al-bayati0036@stud.hkr.se">mustafa.al-bayati0036@stud.hkr.se</a> <br>
-                Phone: 076-0000000
-            </address>
-        </footer>
-
-    </section>
-    
+    <div class="container">
+        <article id="content">
+            <h1>🍓 Raspberry Server 🍓</h1>
+            <h2>This page connects all projects using Express. <br>
+            It's running on Mustafa's Raspberry in <a id="tyringe" href="https://www.google.com/search?q=lund+google+maps&sca_esv=0a8d1f523c448617&sxsrf=AHTn8zpL_83Dw4rlt5CJqLvVJDC702rNag%3A1743518568031&ei=aPvrZ5vOAayiwPAP4uTOkQw&ved=0ahUKEwiboqDniLeMAxUsERAIHWKyM8IQ4dUDCBA&uact=5&oq=lund+google+maps&gs_lp=Egxnd3Mtd2l6LXNlcnAiEGx1bmQgZ29vZ2xlIG1hcHMyBRAAGIAEMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeSIoKULwFWKQJcAF4AZABAJgBjwGgAbIEqgEDMS40uAEDyAEA-AEBmAIEoALmAsICChAAGLADGNYEGEfCAg0QABiwAxjWBBhHGMkDwgIOEAAYgAQYsAMYkgMYigXCAgsQABiABBiRAhiKBcICBxAAGIAEGA2YAwCIBgGQBgqSBwMyLjKgB4Ae&sclient=gws-wiz-serp">Lund</a>📌</h2>
+        </article>
+        <article id="about-raspberry">
+            <h2>About the Raspberry</h2>
+            <p>This server is powered by a Raspberry Pi, a small and affordable computer that is perfect for hosting lightweight web applications. It is energy-efficient and versatile, making it an excellent choice for personal projects and learning purposes. Thank you to everyone who joined the server!</p>
+            <a target="_blank" href="aboutraspberry.png"><img id="img" src="aboutraspberry.png" alt="Raspberry Specs"></a>
+            <p><a target="_blank" href="http://10.147.19.2:8888">RPI-monitor - 10.147.19.1:8888</a></p>
+            <p><a target="_blank" href="http://10.147.19.1:3001">Daniels Server - 10.147.19.1:3001</a></p>
+        </article>
+    </div>
 </body>
 </html>

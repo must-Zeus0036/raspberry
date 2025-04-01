@@ -1,0 +1,111 @@
+body {
+    font-family: 'Cinzel', serif; /* Art Deco-inspired font */
+    font-size: 12px;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    color: #f4e3c1; /* Warm, vintage tone */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    background: #2a2a2a;
+    border: 3px solid #f4e3c1; /* Bold border for Art Deco style */
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000000;
+    width: 60rem;
+}
+
+h1 {
+    border-bottom: 4px double #f4e3c1;
+    font-size: 35px;
+    margin: 15px;
+    font-family: 'Cinzel Decorative', serif; /* Decorative font */
+}
+
+h2 {
+    margin: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 5px;
+    padding: 0px;
+    color: sandybrown;
+    text-align: left;
+    font-family: 'Cinzel', serif;
+}
+
+ul {
+    font-size: 20px;
+    text-align: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+
+ul li::before {
+    content: "◆ "; /* Geometric bullet point */
+    color: #f4e3c1;
+}
+
+a {
+    color: #f4e3c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover, a:hover p {
+    color: #1a1a1a;
+    background-color: #f4e3c1;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#tyringe {
+    color: #d9534f;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Cinzel', serif;
+}
+
+#tyringe:hover {
+    color: #1a1a1a;
+    background-color: #d9534f;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#about-raspberry{
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+#about-raspberry p {
+    margin: 20px;
+    color: #f4e3c1;
+}
+
+#img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    #content {
+        width: 90%;
+        height: auto;
+    }
+}
