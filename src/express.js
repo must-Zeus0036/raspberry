@@ -1,6 +1,4 @@
 import express from 'express'
-import { router } from './route.js'
-
 export const app = express()
 
 // Middleware to parse JSON data as part of the body
@@ -8,9 +6,6 @@ app.use(express.json())
 
 // Use the public folder for HTML index
 app.use(express.static('public'))
-
-// Mount the routes
-app.use('/', router)
 
 // Error handler for 404
 app.use((req, res, next) => {
