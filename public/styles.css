@@ -1,0 +1,481 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar main extra"
+    "footer footer footer";
+    gap: 1rem;
+    background-color: red;
+    /* font-family: Arial, sans-serif; */
+    font-size: var(--font-medium);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    overflow-x: hidden;
+    width: 100%;
+
+}
+/* * {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+} */
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-area: header;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+header nav{
+    /*position: fixed;*/
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+}
+
+
+/* h1 h2 h3 {
+    font-family: 'Bush Script MT';
+    font: bold;
+    font-style: 'cursive';
+} */
+header h1{
+    text-align: left;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*NAVIGATION*/
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+nav li{
+    gap: 10px;
+    margin: 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(176, 244, 6);
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+    
+}
+/*aside*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: White;
+    grid-area: sidebar;
+    position: relative;
+    background: linear-gradient(to left, red, orange);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 280px;
+}
+
+/*BOOK-Part*/
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    width: 250px;
+    background: white;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+.book:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+
+}
+.heighlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+.books img{
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*BOOK-BUTTONS*/
+
+button{
+    background: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50%;
+
+}
+.books button:hover{
+    text-decoration: underline;
+    background:gray;
+    color: white;
+    box-shadow: 3px 3px 3px 3px red;
+}
+.filter-section{
+    grid-area: main;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.filter-category h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+.books-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.book-grid .book{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.book-card h2{
+    display: flex;
+    color: white;
+}
+
+/*CART*/
+
+.cart{
+    grid-area: main;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 15px;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+
+}
+.cart:hover{
+    box-shadow: 5px 5px 5px 5px rgb(186, 5, 5);
+}
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.cart-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    
+}
+
+.cart-item img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/*REMOVE-BUTTON*/
+
+.remove-btn {
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
+}
+.remove-btn-1{
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
+
+}
+.remove-btn-2{
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
+
+}
+
+
+
+.remove-btn-1:hover{
+    text-decoration: underline;
+    background: #a34040;
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+}
+.remove-btn-2:hover{
+    text-decoration: underline;
+    background: #a34040;
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+}
+.total-price {
+    background-color: gray; 
+    color: white;
+    text-align: right;
+    border: none;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.book-cover{
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.book-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.book-tittle{
+    font-weight: bold;
+    font-size: 16px;
+}
+.book-price{
+    color: black;
+    font-size: 16px;
+}
+.quantity{
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.main{
+    border-radius: 0.5rem;
+    gap: 5rem;
+    background: lightgray;
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 10px;
+    background-color: brown;
+    color: rgba(244, 245, 238, 0.61);
+    width: 100%;
+    
+}
+input{
+    background-color: yellow
+    
+}
+
+@media (max-width:1024px) {
+    .container{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+        overflow-x: hidden;
+        gap: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+        /* Adjust book layout for smaller screens */
+
+    .books {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    /* Adjust header layout */
+    header{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    header h1{
+        text-align: center;
+    }
+    h2{
+        padding: 20px;
+    }
+    #logo{
+        justify-content: center;
+    }
+    nav{
+        grid-area: nav;
+        position: relative;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .sidebar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+        gap: 10px;
+        background: linear-gradient(to left, red, orange);
+        border-radius: 0.5rem;
+        flex-wrap: wrap;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .Categories{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .Categories div{
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+    }
+    .books{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .book{
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        background: white;
+        padding: 0px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .book:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adjust shopping cart layout */
+    .cart{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .cart-item{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .cart-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    /* Responsive cart item images */
+    .cart-item img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .remove-btn {
+        width: auto;
+        max-width: 200px;
+
+
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+}
