@@ -1,0 +1,236 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
+    overflow-x: hidden;
+}
+.container{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 1px;
+
+}
+
+header {
+    background-color: brown;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure it's above other content */
+}
+header a:hover{
+    background: #293d50;
+    border-radius: 50px;
+    transition: background-color 2s linear, border-radius 2s linear;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    max-height: 90px;
+    margin-right: 10px;
+    border-radius: 50px;
+    transition: border-radius 5s linear;
+}
+/* Mobile-first navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(0, 140, 255);
+}
+#user-profile{
+    background-color:black;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+a {
+    color: orange;
+}
+
+/* Navigation for larger screens */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Display items horizontally on larger screens */
+        justify-content: center; /* Space items evenly */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* Add horizontal spacing */
+    }
+}
+
+.main {
+    text-align: center;
+    padding: 80px 20px;
+    margin: 15px;
+}
+
+.main p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    background: #1fb626;
+    border-radius: 50px;
+    transition: background-color 2s linear, border-radius 2s linear;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin: 15px;
+}
+#feedback{
+    border-radius: 5px;
+
+}
+
+/* Posts Page Styles */
+.postsContainer {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post .username {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.post .tags {
+    margin-top: 10px;
+}
+
+.post .tags span {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.post .comments {
+    margin-top: 20px;
+}
+
+.comment {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.profile-card {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.profile-card-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+}
+
+.close-profile-card {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*.highlighted-post{
+    background-color: yellow;
+
+}*/
+
+/* Contact Form Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    max-width: 350px;
+    margin: auto;
+}
+
+.contact-form input{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    background: #2e8a17;
+    border-radius: 50px;
+    transition: background-color 2s linear, border-radius 2s linear;
+}
+
