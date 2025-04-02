@@ -24,6 +24,34 @@
             <h2>This page connects all projects using Express. <br>
             It's running on Mustafa's Raspberry in <a id="tyringe" href="https://www.google.com/search?q=lund+google+maps&sca_esv=0a8d1f523c448617&sxsrf=AHTn8zpL_83Dw4rlt5CJqLvVJDC702rNag%3A1743518568031&ei=aPvrZ5vOAayiwPAP4uTOkQw&ved=0ahUKEwiboqDniLeMAxUsERAIHWKyM8IQ4dUDCBA&uact=5&oq=lund+google+maps&gs_lp=Egxnd3Mtd2l6LXNlcnAiEGx1bmQgZ29vZ2xlIG1hcHMyBRAAGIAEMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeSIoKULwFWKQJcAF4AZABAJgBjwGgAbIEqgEDMS40uAEDyAEA-AEBmAIEoALmAsICChAAGLADGNYEGEfCAg0QABiwAxjWBBhHGMkDwgIOEAAYgAQYsAMYkgMYigXCAgsQABiABBiRAhiKBcICBxAAGIAEGA2YAwCIBgGQBgqSBwMyLjKgB4Ae&sclient=gws-wiz-serp">Lund</a>📌</h2>
         </article>
+        <title>Clock</title>
+    <style>
+        #clock {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial call to display the clock immediately
+        updateClock();
+    </script>
         <article id="about-raspberry">
             <h2>About the Raspberry</h2>
             <p>This server is powered by a Raspberry Pi, a small and affordable computer that is perfect for hosting lightweight web applications. It is energy-efficient and versatile, making it an excellent choice for personal projects and learning purposes. Thank you to everyone who joined the server!</p>
