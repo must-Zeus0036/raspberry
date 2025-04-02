@@ -52,11 +52,30 @@
         // Initial call to display the clock immediately
         updateClock();
     </script>
+    <style>
+        .flag-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow flags to wrap to the next line */
+            gap: 10px; /* Space between flags */
+        }
+        .flag-container img {
+            width: 100px; /* Adjust as needed */
+            height: auto;
+        }
+    </style>
+        <div class="flag-container">
+            <img src="images/Flag_of_Sweden.svg.webp" alt="Sweden flag">
+            <img src="images/pl.png" alt="Poland flag">
+            <img src="images/Flag_of_the_Syrian_revolution.svg.webp" alt="Syria flag">
+            <img src="images/Iq.png" alt="Iraq flag">
+            <img src="images/Flag_of_Serbia.svg.webp" alt="Serbia flag">
+            <img src="images/Flag_of_Vietnam.svg.png" alt="Vietnam flag">
+            <img src="images/Flag_of_Russia.svg.webp" alt="Russia flag">
+        </div>
         <article id="about-raspberry">
             <h2>About the Raspberry</h2>
             <p>This server is powered by a Raspberry Pi, a small and affordable computer that is perfect for hosting lightweight web applications. It is energy-efficient and versatile, making it an excellent choice for personal projects and learning purposes. Thank you to everyone who joined the server!</p>
             <a target="_blank" href="aboutraspberry.png"><img id="img" src="aboutraspberry.png" alt="Raspberry Specs"></a><br>
-            <a href="webshop1">Mustafa's seminar 1</a><br>
             <a href="seminar2/">Mustafa's seminar 2</a><br>
 
             <p><a target="_blank" href="http://10.147.19.2:8888">RPI-monitor - 10.147.19.1:8888</a></p>
